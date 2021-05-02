@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+      body {
+          background-color: #e3fdfd;
+      }
+      hr{
+          background-color:#fff;
+          border-style: none; 
+          height: 3px;
+          width: 10%; ;
+      }
+  </style>
+</head>
+<body >
+   <form action="#">
+    <label for="phone">Enter your phone number:</label>
+    <input type="tel" id="phone" name="phone" 
+           pattern="[0-9]{3} - [0-9]{3} - [0-9]{4}"
+           required>
+           <small>Format: 123-456-7890</small><br>
+           <br>
+           <label for="start" >start month</label> 
+        <input type="month" id="start" name="start"
+             min="2018-03" value="2018-05"><br>
+             <br>
+             <label for="week">Choose a week in May:</label>
+             <input type="week" name="week" id="camp-week"
+                    min="2018-W18" max="2018-W26 " required><br>
+                    <br>
+       <label for="tentacles">Number of tentacles (10-100):</label>
+       <input type="number" id="tentacles" name="tentacles" 
+             min="10" max="100"><br>
+             <br>
+             <lable for="site-search">Search the site:</lable>
+             <input type="search" id="site-search" name="q"
+                    aria-label="Search through site content">
+            <button>Search</button>
+        
+        
+   </form> 
+
+</body>
+</html>
